@@ -5,7 +5,7 @@ import Home from './Components/Home/Home';
 import About from './Components/About/About';
 import MovieIndex from './Components/Movies/Index';
 import PokemonShow from './Components/Movies/Show';
-import logo from './logo.svg';
+
 import './App.css';
 
 
