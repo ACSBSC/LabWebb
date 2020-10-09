@@ -4,7 +4,7 @@ import {BrowserRouter, Switch, Route, Link} from 'react-router-dom';
 import Home from './Components/Home/Home';
 import About from './Components/About/About';
 import MovieIndex from './Components/Movies/Index';
-
+import PokemonShow from './Components/Movies/Show';
 import logo from './logo.svg';
 import './App.css';
 
@@ -36,6 +36,9 @@ function App() {
             </Route>
             <Route exact path="/pokemon">
               <MovieIndex />
+            </Route>
+            <Route exact path="/pokemons/:id">
+              <PokemonShow />
             </Route>
           </Switch>
         </div>

@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import {Link} from "react-router-dom";
 import axios from 'axios';
 
 const Index = () => {
@@ -24,7 +25,11 @@ const Index = () => {
       <h1>Pokemon index</h1>
       <ul>
         {pokemons.map((pokemon, i) => {
-          return (<li key={i}>{pokemon.name}</li>)
+          return (<li key={i}>
+            <Link to={'/pokemons/'+(i+1)}>
+              {pokemon.name}
+            </Link>
+            </li>)
         })}
       </ul>
     </>
