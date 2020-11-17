@@ -9,9 +9,9 @@ module.exports = {
     connection: {
       host: process.env.DB_DEVELOPMENT_HOST || 'localhost',
       port: process.env.DB_DEVELOPMENT_PORT || '3306',
-      database:  'urlshort',
+      database:  process.env.DB_PRODUCTION_NAME || 'my_database',
       user:  process.env.DB_DEVELOPMENT_USER || 'root',
-      password:  'SaninChi882%'
+      password:  process.env.DB_PRODUCTION_PASSWORD || ''
     },
     pool: {
       min: 2,
