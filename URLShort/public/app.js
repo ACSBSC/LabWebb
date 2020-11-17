@@ -1,6 +1,6 @@
 function storeUrl() {
     console.log("Inside storeUrl")
-    const urlInput = document.getElementById("urlInicial").value;
+    const urlInput = document.getElementById("urlinit").value;
     let body = {
       method: "POST",
       headers: {
