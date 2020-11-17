@@ -17,7 +17,7 @@ exports.findHash = (hash) => {
   return knex.select("*").from("urlsComplete").where("hash", hash).first();
 };
 exports.changeCounter = (item) => {
-  return knex("urlsConplete")
+  return knex("urlsComplete")
     .update({ visited: item.visited + 1 })
     .where("id", item.id);
 };
